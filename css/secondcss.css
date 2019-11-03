@@ -1,0 +1,112 @@
+
+
+html{
+    background:linear-gradient(to right, mediumslateblue, hotpink);
+    width: 100%;
+    height: 100%;
+    border: 5px solid mistyrose;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#f{
+    height: 60px;
+    width: 300px;
+    background-color: mistyrose;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+#s{
+    border: 30px solid transparent;
+    border-left: 30px solid mistyrose;
+    border-top: 30px solid mistyrose;
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top:0;
+    left: 300px;
+}
+
+h1{
+    font-family: "Bookman Old Style", serif;
+    color: mediumslateblue;
+}
+
+.circle{
+    left: 30%;
+    top: 0px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    border: 3px solid mistyrose;
+    position: relative;
+    display:inline-block;
+
+}
+
+.circle:hover{
+    transition: 2s;
+    height: 250px;
+    width: 250px;
+}
+
+#blink1 {
+    -webkit-animation: blink1 3s linear infinite;
+    animation: blink1 2s linear infinite;
+}
+@-webkit-keyframes blink1 {
+    0% { color: rgba(255, 20, 147, 1); }
+    50% { color: rgba(34, 34, 34, 0); }
+    100% { color: rgba(255, 20, 147, 1); }
+}
+@keyframes blink1 {
+    0% { color: rgba(255, 20, 147, 1); }
+    50% { color: rgba(34, 34, 34, 0); }
+    100% { color: rgba(255, 20, 147, 1); }
+}
+div>h2{
+    position: absolute;
+    top: 360px;
+    left: 40%;
+    font-size: 40px;
+}
+
+h1{
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    margin: 0;
+}
+
+p, small{
+    margin: 15px;
+}
+
+li:before, li::after{
+    content: " ";
+    background: url("../resources/psychology-2422442_640.png");
+    margin: 10px;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+display: inline-block;
+}
+
+.none{
+    list-style-type: none;
+}
+
+article{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: "Bookman Old Style", serif;
+}
+
+article, li{
+    font-family: "Bookman Old Style", serif;
+}
+
